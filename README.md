@@ -1,6 +1,7 @@
 # StrongMindPizzeria
 
 Backend: .Net Core Restful API. Clean Architecture with command/query repo.
+
 Frontend: React Web App. Major Node packages: `Axio` for API Client, `TanStack Query` for queries, and `Material UI` for components (Not CSS files since styled tags are a good enough for small projects)
 
 ## 1.Building and running
