@@ -49,7 +49,7 @@ export function TopBar(props: TopBarProps) {
                     <Box sx={{ flexGrow: 0 }}>
                         {userName ? (
                             <Tooltip title="Open settings">
-                                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                                <IconButton data-testid="avatarButton" onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                                     <Avatar>{`${userName.split(' ')[0][0]}`}</Avatar>
                                 </IconButton>
                             </Tooltip>
