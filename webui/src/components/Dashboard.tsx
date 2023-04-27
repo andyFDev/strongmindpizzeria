@@ -95,7 +95,7 @@ export function Dashboard(props: DashboardProps) {
                                 setToAddPizzaToppings([] as string[]);
                             }}
                             variant="contained"
-                            disabled={toAddPizzaName === "" || toAddPizzaToppings === undefined || toAddPizzaToppings.length == 0 || tooManyPizzas()}
+                            disabled={toAddPizzaName === "" || toAddPizzaToppings === undefined || toAddPizzaToppings.length === 0 || tooManyPizzas()}
                         >
                             {tooManyPizzas() ? '20 Max' : 'Add'}
                         </Button>

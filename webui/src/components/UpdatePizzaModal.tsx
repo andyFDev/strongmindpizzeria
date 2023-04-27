@@ -60,7 +60,7 @@ export function UpdatePizzaModal(props: UpdatePizzaModalProps) {
                         disabled={
                             props.toUpdatePizzaName === ""
                             || props.toUpdatePizzaToppings === undefined
-                            || props.toUpdatePizzaToppings.length == 0}
+                            || props.toUpdatePizzaToppings.length === 0}
                     >
                         UPDATE
                     </Button>
