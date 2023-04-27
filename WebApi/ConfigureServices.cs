@@ -7,7 +7,7 @@ namespace WebApi;
 
 public static class ConfigureServices
 {
-    public static IServiceCollection AddWebApiServices(this IServiceCollection services)
+    public static IServiceCollection AddWebApiServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddSingleton<ICurrentUserService, CurrentUserService>();
         services.AddHttpContextAccessor();
@@ -23,7 +23,7 @@ public static class ConfigureServices
                 policy =>
                 {
                     policy
-                    .WithOrigins("http://localhost:3000")
+                    .WithOrigins(configuration.GetSection("AllowedOrigins").Get<string[]>())
                     .AllowAnyHeader()
                     .AllowAnyMethod();
                 });

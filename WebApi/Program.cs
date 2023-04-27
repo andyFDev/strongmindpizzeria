@@ -6,19 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddApplicationServices();
 builder.Services.AddInfrastructureServices(builder.Configuration);
-builder.Services.AddWebApiServices();
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(
-        "AllowSpecificOrigins",
-        policy =>
-        { 
-            policy
-                .WithOrigins(builder.Configuration.GetSection("AllowedOrigins").Get<string[]>())
-                .AllowAnyHeader()
-                .AllowAnyMethod();
-        });
-});
+builder.Services.AddWebApiServices(builder.Configuration);
 
 var app = builder.Build();
 
