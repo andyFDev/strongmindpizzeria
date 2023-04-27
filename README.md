@@ -13,5 +13,5 @@ The easiest way is to install [Visual Studio] (https://visualstudio.microsoft.co
 
 ## 2. How to run tests
 
-1.a (If we refer to tests in the solution): Click `Test` -> `Test Explorer` -> `Run All Test in View`
-1.b (If we refer to how to setup the page to test it): Video in Loom [here] ()
+1. (If we refer to tests in the solution): Click `Test` -> `Test Explorer` -> `Run All Test in View`
+2. (If we refer to how to setup the page to test it): Video in Loom [here] ()
