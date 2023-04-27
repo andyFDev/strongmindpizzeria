@@ -23,7 +23,7 @@ public static class ConfigureServices
                 policy =>
                 {
                     policy
-                    .WithOrigins(configuration.GetSection("AllowedOrigins").Get<string[]>())
+                    .WithOrigins(configuration.GetSection("AllowedOrigins").Get<string>())
                     .AllowAnyHeader()
                     .AllowAnyMethod();
                 });
