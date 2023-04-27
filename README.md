@@ -1,5 +1,8 @@
 # StrongMindPizzeria
 
+Backend: .Net Core Restful API. Clean Architecture with command/query repo.
+Frontend: React Web App. Major Node packages: `Axio` for API Client, `TanStack Query` for queries, and `Material UI` for components (Not CSS files since styled tags are a good enough for small projects)
+
 ## 1.Building and running
 
 The easiest way is to install [Visual Studio] (https://visualstudio.microsoft.com/) and follow the next steps:
@@ -13,5 +16,5 @@ The easiest way is to install [Visual Studio] (https://visualstudio.microsoft.co
 
 ## 2. How to run tests
 
-1. (If we refer to tests in the solution): Click `Test` -> `Test Explorer` -> `Run All Test in View`
-2. (If we refer to how to setup the page to test it): Video in Loom [here] ()
+1. (If this point means the tests in code): Click `Test` -> `Test Explorer` -> `Run All Test in View`
+2. (if this point means how to setup the page to test it): [Screen recording] (https://www.loom.com/share/f7444998310c4aa3ada701ac772fd7a2) using Loom with instructions on how to operate the page.
